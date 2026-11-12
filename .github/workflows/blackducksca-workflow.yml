@@ -33,7 +33,7 @@ jobs:
         id: black-duck-security-scan
         uses: blackduck-inc/black-duck-security-scan@v2
         env:
-          DETECT_EXCLUDED_DETECTOR: 'GIT'
+          DETECT_EXCLUDED_DETECTORS: 'GIT'
         with:
           ### SCANNING: Required fields
           blackducksca_url: ${{ vars.BLACKDUCKSCA_URL }}
